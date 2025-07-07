@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 
 export default defineConfig({
-  output: 'server', // ✅ Adiciona suporte a rotas de API
+  output: 'server', 
 
   vite: {
     plugins: [tailwindcss()]
