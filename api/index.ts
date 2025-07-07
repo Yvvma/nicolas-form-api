@@ -7,12 +7,12 @@ export const config = {
 };
 
 export default async function handler(req: Request): Promise<Response> {
-  // Responde rápido para requisições OPTIONS (CORS preflight)
+  
   if (req.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
       headers: {
-        'Access-Control-Allow-Origin': '*', // ou substitua pelo seu domínio para maior segurança
+        'Access-Control-Allow-Origin': '*', 
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
