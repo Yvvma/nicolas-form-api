@@ -1,0 +1,7 @@
+{
+  "name": "resend-api",
+  "type": "module",
+  "dependencies": {
+    "resend": "^2.0.0"
+  }
+}
