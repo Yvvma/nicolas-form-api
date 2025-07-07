@@ -54,7 +54,7 @@ export default async function handler(req: Request): Promise<Response> {
           letter-spacing: 0.04em;
           text-transform: uppercase;
         ">
-          📩 Novo contato recebido
+           Novo contato recebido
         </h2>
         <div style="
           background-color: transparent;
