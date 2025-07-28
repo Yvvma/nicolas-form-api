@@ -7,12 +7,11 @@ export const config = {
 };
 
 export default async function handler(req: Request): Promise<Response> {
-  
   if (req.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
       headers: {
-        'Access-Control-Allow-Origin': '*', 
+        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Access-Control-Allow-Headers': 'Content-Type',
       },
@@ -30,7 +29,7 @@ export default async function handler(req: Request): Promise<Response> {
   }
 
   try {
-    const { name, email } = await req.json();
+    const { name, email, marketingConsent } = await req.json();
 
     const html = `
       <div style="
@@ -66,6 +65,9 @@ export default async function handler(req: Request): Promise<Response> {
         ">
           <p style="margin: 0 0 12px;"><strong>Nome:</strong> ${name}</p>
           <p style="margin: 0 0 12px;"><strong>Email:</strong> ${email}</p>
+          <p style="margin: 0 0 12px;"><strong>Consent:</strong> ${
+            marketingConsent ? 'Sim' : 'Não'
+          }</p>
         </div>
         <p style="
           margin-top: 28px;
