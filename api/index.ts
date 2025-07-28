@@ -45,7 +45,7 @@ export default async function handler(req: Request): Promise<Response> {
         box-sizing: border-box;
       ">
         <div style="text-align:center; margin-bottom:32px;">
-          <img src="https://res.cloudinary.com/dlad8ikv9/image/upload/v1750592443/epic-access-logo_zy66lz-Photoroom_gnwaq9.png" alt="Logo" width="120" style="max-width:100%; height:auto;" />
+          <img src="https://res.cloudinary.com/dpydhcpxj/image/upload/v1753700643/logo-rr_tlgway.png" alt="Logo" width="120" style="max-width:100%; height:auto;" />
         </div>
         <h2 style="
           margin:0 0 16px;
@@ -80,9 +80,9 @@ export default async function handler(req: Request): Promise<Response> {
     `;
 
     const data = await resend.emails.send({
-      from: 'Contato <form@epicaccess.com.br>',
-      to: 'contato@epicaccess.com.br',
-      subject: 'Novo contato via site',
+      from: 'Formulário Rafael Roma <contato@rafaelroma.com.br>',
+      to: 'contato@rafaelroma.com.br',
+      subject: 'Novo contato via Site',
       html,
     });
 
