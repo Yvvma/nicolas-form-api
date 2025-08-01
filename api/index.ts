@@ -44,7 +44,7 @@ export default async function handler(req: Request): Promise<Response> {
         box-sizing: border-box;
       ">
         <div style="text-align:center; margin-bottom:32px;">
-          <img src="https://res.cloudinary.com/dpydhcpxj/image/upload/v1753700643/logo-rr_tlgway.png" alt="Logo" width="120" style="max-width:100%; height:auto;" />
+          <img src="https://res.cloudinary.com/dmgypxge0/image/upload/v1749653403/favicon-nicolas-cabaneco_vtzwqa.png" alt="Logo" width="120" style="max-width:100%; height:auto;" />
         </div>
         <h2 style="
           margin:0 0 16px;
