@@ -82,8 +82,8 @@ export default async function handler(req: Request): Promise<Response> {
     `;
 
     const data = await resend.emails.send({
-      from: 'Formulário Rafael Roma <contato@rafaelroma.com.br>',
-      to: 'contato@rafaelroma.com.br',
+      from: 'Formulário Nicolas Cabaneco <contato@nicolascabaneco.com>',
+      to: 'contato@nicolascabaneco.com',
       subject: 'Novo contato via Site',
       html,
     });
